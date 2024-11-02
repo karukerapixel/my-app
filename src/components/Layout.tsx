@@ -4,13 +4,13 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #fff;
+    background-color:  ${props => props.theme.colors.white};
   }
 
   * {
     font-size: 24px;
     font-family: "Inter", sans-serif;
-    color: #303030;
+    color: ${props => props.theme.colors.black};
     text-decoration: none;
     border: none;
     box-sizing: border-box;
