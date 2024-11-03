@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PortfolioList, PortfolioListItem, PortfolioWrapper } from './style';
-import { projects } from '../../data/projects';
+import projects from '../../data/projects.json'
 
 const Portfolio: React.FC = () => {
   return (
