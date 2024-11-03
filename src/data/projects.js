@@ -23,7 +23,7 @@ export const projects = [
         link: 'http://'
     },
     {
-        name: 'Nike',
+        name: 'Playstation',
         type: 'Refonte de site',
         imgUrl: playstation,
         link: 'http://'
