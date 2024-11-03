@@ -19,6 +19,7 @@ export const ServicesListItem = styled.li`
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   &:nth-child(1) {
     grid-column: 1;
