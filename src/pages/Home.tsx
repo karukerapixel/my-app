@@ -5,7 +5,7 @@ import Portfolio from '../components/Portfolio';
 const Home: React.FC = () => {
   return (
     <>
-      <Hero />
+      <Hero heading={'Incroyable, moderne, fluide & sans template.'} />
       <Services />
       <Portfolio />
     </>
