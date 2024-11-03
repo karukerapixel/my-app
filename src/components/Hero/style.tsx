@@ -1,7 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const HeroWrapper = styled.div`
+export const HeroWrapper = styled.div`
   width: 80%;
   height: 100vh;
   display: flex;
@@ -18,13 +17,3 @@ const HeroWrapper = styled.div`
     line-height: 0.9;
   }
 `;
-
-const Hero: React.FC = () => {
-  return (
-    <HeroWrapper>
-      <h1>Incroyable, moderne, fluide & sans template.</h1>
-    </HeroWrapper>
-  );
-};
-
-export default Hero;

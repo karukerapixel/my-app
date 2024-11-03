@@ -1,7 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const FooterWrapper = styled.footer`
+export const FooterWrapper = styled.footer`
   width: 80%;
   height: 60vh;
   display: flex;
@@ -11,7 +10,7 @@ const FooterWrapper = styled.footer`
   margin-top: 60px;
 `;
 
-const FooterBottom = styled.footer`
+export const FooterBottom = styled.footer`
   display: flex;
   justify-content: center;
 
@@ -21,15 +20,3 @@ const FooterBottom = styled.footer`
     padding: 12px 0;
   }
 `;
-
-const Footer: React.FC = () => {
-  return (
-    <FooterWrapper>
-      <FooterBottom>
-        <p>&copy; Karukera Pixel</p>
-      </FooterBottom>
-    </FooterWrapper>
-  );
-};
-
-export default Footer;

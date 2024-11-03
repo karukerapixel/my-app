@@ -1,8 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const HeaderWrapper = styled.header`
+export const HeaderWrapper = styled.header`
   z-index: 1000;
   width: 80%;
   height: 100px;
@@ -16,13 +15,13 @@ const HeaderWrapper = styled.header`
   top: 60px;
 `;
 
-const HeaderLogo = styled(Link)`
+export const HeaderLogo = styled(Link)`
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.15rem;
 `;
 
-const HeaderNavBar = styled.nav`
+export const HeaderNavBar = styled.nav`
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -43,7 +42,7 @@ const HeaderNavBar = styled.nav`
   }
 `;
 
-const HeaderButton = styled.button`
+export const HeaderButton = styled.button`
   width: 150px;
   height: 50px;
   display: flex;
@@ -59,20 +58,3 @@ const HeaderButton = styled.button`
     background-color: #d9d9d9;
   }
 `;
-
-const Header: React.FC = () => {
-  return (
-    <HeaderWrapper>
-      <HeaderLogo to="/">Karukera Pixel</HeaderLogo>
-      <HeaderNavBar>
-        <NavLink to="#">Ma sélection</NavLink>
-        <NavLink to="#">Features</NavLink>
-        <NavLink to="#">Services</NavLink>
-        <NavLink to="#">Mes actualités</NavLink>
-      </HeaderNavBar>
-      <HeaderButton type="button">Contactez-moi</HeaderButton>
-    </HeaderWrapper>
-  );
-};
-
-export default Header;

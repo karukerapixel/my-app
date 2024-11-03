@@ -1,10 +1,6 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
-import Header from './Header';
-import Footer from './Footer';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${(props) => props.theme.colors.white};
   }
@@ -41,18 +37,3 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 500;
   }
 `;
-
-const Layout: React.FC = () => {
-  return (
-    <>
-      <GlobalStyle />
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </>
-  );
-};
-
-export default Layout;

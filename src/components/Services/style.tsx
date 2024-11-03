@@ -1,14 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { services } from '../data/services';
+import styled from "styled-components";
 
-const ServicesWrapper = styled.div`
+export const ServicesWrapper = styled.div`
   width: 80%;
   margin: 60px 0;
 `;
 
-const ServicesList = styled.ul`
+export const ServicesList = styled.ul`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -16,7 +13,7 @@ const ServicesList = styled.ul`
   grid-gap: 24px;
 `;
 
-const ServicesListItem = styled.li`
+export const ServicesListItem = styled.li`
   width: 100%;
   height: 100%;
   display: flex;
@@ -74,21 +71,3 @@ const ServicesListItem = styled.li`
     }
   }
 `;
-
-const Services: React.FC = () => {
-  return (
-    <ServicesWrapper>
-      <ServicesList>
-        {services.map((service, index) => (
-          <ServicesListItem style={{ backgroundImage: `url(${service.imgUrl})`}} key={index}>
-            <Link to="#">
-              <h2>{service.title}</h2>
-            </Link>
-          </ServicesListItem>
-        ))}
-      </ServicesList>
-    </ServicesWrapper>
-  );
-};
-
-export default Services;
