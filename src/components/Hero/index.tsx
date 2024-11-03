@@ -1,10 +1,14 @@
 import React from 'react';
 import { HeroWrapper } from './style';
 
-const Hero: React.FC = () => {
+type HeroProps = {
+  heading: string;
+};
+
+const Hero: React.FC<HeroProps> = ({ heading }) => {
   return (
     <HeroWrapper>
-      <h1>Incroyable, moderne, fluide & sans template.</h1>
+      <h1>{heading}</h1>
     </HeroWrapper>
   );
 };
